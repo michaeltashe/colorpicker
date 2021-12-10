@@ -9,6 +9,9 @@ let output3 = document.querySelector("#value3");
 
 let backArrow = document.querySelector(".back-arrow");
 
+let header = document.querySelector("h1");
+let subheader = document.querySelector("h2");
+
 let body = document.querySelector("body");
 
 output1.innerHTML = slider1.value;
@@ -90,6 +93,24 @@ function updateColor() {
     ")";
 
   backArrow.style.color =
+    "rgb(" +
+    Math.abs(r - 255) +
+    "," +
+    Math.abs(g - 255) +
+    "," +
+    Math.abs(b - 255) +
+    ")";
+
+  header.style.color =
+    "rgb(" +
+    Math.abs(r - 255) +
+    "," +
+    Math.abs(g - 255) +
+    "," +
+    Math.abs(b - 255) +
+    ")";
+
+  subheader.style.color =
     "rgb(" +
     Math.abs(r - 255) +
     "," +
